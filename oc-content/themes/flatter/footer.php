@@ -80,10 +80,7 @@
                 <div class="col-md-6 col-sm-6 col-xs-6 copyright">
                     &copy; <?php echo date('Y'); ?> <a href="#"><?php echo osc_page_title(); ?></a>. All Rights Reserved. 
                     <?php if( osc_get_preference('footer_link', 'flatter_theme') !== '0') { echo 'Powered by <a title="Osclass" target="_blank" rel="nofollow" href="http://osclass.org/">Osclass</a>'; } ?>
-                </div>
-				<div class="col-md-6 col-sm-6 col-xs-6 powered">
-                	Designed and Developed by <a title="Flatter - DrizzleDesigns" rel="nofollow" target="_blank" href="http://www.drizzledesigns.in/">DrizzleDesigns</a>
-                </div>
+                </div>				
             </div>
             </div>
         </div>
