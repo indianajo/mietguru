@@ -189,7 +189,7 @@
 
         public function doPagination()
         {
-            if( $this->total > 1 ) {
+            if( $this->total > 2 ) {
                 $links = $this->get_links();
                 if($this->listClass !== false) {
                     return '<ul class="' . $this->listClass . '">' . implode($this->delimiter, $links) . '</ul>';
