@@ -1,0 +1,79 @@
+a:hover, a:focus, 
+.navbar-default h1 a.navbar-brand, 
+.navbar-default h1 a.navbar-brand:hover,
+#sidebar .price .col-sm-9 span, #sidebar .price .col-sm-12 span,
+#sidebar .nonregistered a.btn-green:hover,
+#sidebar div.details .disabled,
+.item-title span i,
+#comments .panel-footer a,
+#locationSelect i,
+.latestListing h3 small a,
+.latestbylocation h3 small a,
+.featuredlistings .item h3 a,
+.featuredlistingsE i,
+.relatedlistings h3 small,
+.relatedlistings .item .price,
+.maincategory .catsingle i,
+.allcategories i,
+.owl-buttons .owl-prev:before,
+.owl-buttons .owl-next:before,
+.login-register small a,
+.sendtofriend .fa,
+.searchpage .listing-grid > div > div > .listing-detail span.price,
+.searchpage .listing-list > div > div > .listing-detail > span.price,
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,
+.profile-header .profile-detail i,
+#footer .links ul li:hover:before, #footer .footer-top a:hover,
+#footer .latest ul li:hover:before,
+#footer .footer-bottom a,
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
+.latestListing .item .price,
+.navbar-static-top .navbar-nav > li > a:hover, .navbar-static-top .navbar-nav > li > a:focus, .navbar-static-top .navbar-nav > .open > a, .navbar-static-top .navbar-nav > .open > a:hover, .navbar-static-top .navbar-nav > .open > a:focus,
+.latestbylocation .item .price,
+#comments h2 .fa
+{ 
+	color:#FF9900;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #FF9900;
+}
+.carousel-control:hover, .carousel-control:focus { color:#FF9900!important; }
+
+.bigsearch,
+.subscribe,
+.profile-section,
+.pagination ul > li > span.searchPaginationSelected,
+.searchpage .actions .togglebutton.active a.grid-button, .searchpage .actions .togglebutton a.list-button,
+#sidebar .sellerlisting .item .detail span.price
+{ 
+	background:#FF9900; 
+}
+.subscribe, .pagination ul > li > span.searchPaginationSelected
+{ 
+	border:1px solid #f69401!important; 
+}
+.searchpage .actions .togglebutton.active a.grid-button, .searchpage .actions .togglebutton a.list-button { border:1px solid #f69401; color:#fff;}
+.searchpage .actions .togglebutton a.grid-button:hover, .searchpage .actions .togglebutton.active a.list-button:hover { color:#333;}
+
+.imagebox .qq-upload-button {
+    border: 2px dashed #FF9900;
+}
+/* Modified */
+.navbar-static-top .navbar-nav > li.publish > a, .featuredlistings .price, .status span.premium { background:#333; color:#ffb400!important; }
+.navbar-static-top .navbar-nav > li.publish > a:hover { background:#444!important; }
+
+.imagebox .qq-upload-list li {
+    background: #fef8cf !important;
+    border: 1px solid #f6ecaa;
+}
+
+.btn-success	 {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    color: #fff;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
+    background-color: #ec971f;
+    border-color: #d58512;
+}
