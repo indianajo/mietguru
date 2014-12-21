@@ -47,7 +47,14 @@
                     <?php } ?>
                     <span class="counter-search">
                     <?php $search_number = flatter_search_number();
-                    printf(__('%1$d - %2$d of %3$d listings', 'flatter'), $search_number['from'], $search_number['to'], $search_number['of']); ?>
+                    if($search_number['of'] > 0){
+                    	if($search_number['of']==1)
+                    		printf(__('%1$d listing', 'flatter'), $search_number['of']);
+                    	else 
+                    		printf(__('%1$d listings', 'flatter'), $search_number['of']);
+                    }
+                    
+                    //printf(__('%1$d - %2$d of %3$d listings', 'flatter'), $search_number['from'], $search_number['to'], $search_number['of']); ?>
                     </span>
                 </div>
             	<?php if(osc_count_items() >= 1) { ?>
