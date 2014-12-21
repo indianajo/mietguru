@@ -54,6 +54,6 @@ $(document).ready(function(){
 				<input type="text" class="form-control" placeholder="<?php _e('Enter your e-mail'); ?>" name="alert_email" id="alert_email">
                 </div>
             <?php } ?>
-            <button type="submit" class="btn btn-default btn-sub"><?php _e('Subscribe now', 'bender'); ?></button>
+            <button type="submit" class="btn btn-default btn-sub"><?php _e('Subscribe now', 'flatter'); ?></button>
     </form>
 </div>
