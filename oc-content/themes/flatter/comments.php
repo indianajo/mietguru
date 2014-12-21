@@ -77,7 +77,7 @@
                 </div><!-- Comment -->
         </div><!-- Comments Container -->
         <?php } else { ?>
-        <div class="panel-footer">You must be logged in to comment. <a href="<?php echo osc_user_login_url(); ?>"><?php _e("Login", 'flatter'); ?></a> or <a href="<?php echo osc_register_account_url(); ?>"><?php _e("Register", 'flatter'); ?></a></div>
+        <div class="panel-footer"><?php echo _e('You need to be logged in to comment','flatter');?> <a href="<?php echo osc_user_login_url(); ?>"><?php _e("Login", 'flatter'); ?></a> / <a href="<?php echo osc_register_account_url(); ?>"><?php _e("Register", 'flatter'); ?></a></div>
         <?php } ?>    
     </div>
 <?php } ?>
