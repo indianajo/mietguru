@@ -118,7 +118,7 @@ function getSliderNavigation() {
                 <p><?php echo $slide['text']; ?></p>
                 <?php } ?>
                 <?php if(getSliderLink() ==1){ ?>
-                <p><a class="btn btn-lg btn-warning" href="<?php echo $slide['link'];?>" <?php if(getSliderOpenIn() ==1) { echo 'target="_blank"'; } ?> role="button">Readmore</a></p>
+                <p><a class="btn btn-lg btn-warning" href="<?php echo $slide['link'];?>" <?php if(getSliderOpenIn() ==1) { echo 'target="_blank"'; } ?> role="button">Mehr erfahren ...</a></p>
                 <?php } ?>
             </div>
 			<?php } ?>
