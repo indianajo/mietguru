@@ -31,9 +31,9 @@
                         <ul>
                             <li><a href="https://www.facebook.com/<?php echo osc_get_preference("facebook_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> Follow on Facebook</a></li>
                             <li><a href="https://twitter.com/<?php echo osc_get_preference("twitter_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-twitter fa-lg"></i> Follow on Twitter</a></li>
-                            <li><a href="https://plus.google.com/<?php echo osc_get_preference("gplus_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-google-plus fa-lg"></i> Follow on Google+</a></li>
-                            <li><a href="http://www.pinterest.com/<?php echo osc_get_preference("pinterest_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-pinterest fa-lg"></i> Follow on Pinterest</a></li>
-                            <li><a href="<?php echo osc_base_url (); ?>feed" target="_blank"><i class="fa fa-rss fa-lg"></i> RSS Feed</a></li>
+                            <!--li><a href="https://plus.google.com/<?php //echo osc_get_preference("gplus_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-google-plus fa-lg"></i> Follow on Google+</a></li-->
+                            <!--li><a href="http://www.pinterest.com/<?php //echo osc_get_preference("pinterest_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-pinterest fa-lg"></i> Follow on Pinterest</a></li-->
+                            <!--li><a href="<?php //echo osc_base_url (); ?>feed" target="_blank"><i class="fa fa-rss fa-lg"></i> RSS Feed</a></li-->
                         </ul>
                     </div>
                 </div>
