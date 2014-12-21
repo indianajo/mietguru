@@ -14,24 +14,24 @@
             <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-4 col-xs-6 morelinks">
-                    <h4>More Information</h4>
+                    <h4><?php echo _e('More Information','flatter')?></h4>
                     <div class="fb-content links">
                         <ul>
                         	<?php osc_reset_static_pages();
                         	while( osc_has_static_pages() ) { ?>
                             <li><a href="<?php echo osc_static_page_url(); ?>"><?php echo osc_static_page_title(); ?></a></li>
                         	<?php } ?>
-                            <li><a href="<?php echo osc_contact_url(); ?>"><?php _e('Contact Us', 'flatter'); ?></a></li>
+                            <li><a href="<?php echo osc_contact_url(); ?>"><?php _e('Contact us', 'flatter'); ?></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-4 col-xs-6 followus">
-                    <h4>Follow Us</h4>
+                    <h4><?php echo _e('Follow Us','flatter')?></h4>
                     <div class="fb-content social">
                         <ul>
-                            <li><a href="https://www.facebook.com/<?php echo osc_get_preference("facebook_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> Follow on Facebook</a></li>
-                            <li><a href="https://twitter.com/<?php echo osc_get_preference("twitter_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-twitter fa-lg"></i> Follow on Twitter</a></li>
-                            <li><a href="https://plus.google.com/<?php echo osc_get_preference("gplus_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-google-plus fa-lg"></i> Follow on Google+</a></li>
+                            <li><a href="https://www.facebook.com/<?php echo osc_get_preference("facebook_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-facebook-square fa-lg"></i> <?php echo _e('Follow on','flatter')?> Facebook</a></li>
+                            <li><a href="https://twitter.com/<?php echo osc_get_preference("twitter_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-twitter fa-lg"></i> <?php echo _e('Follow on','flatter')?> Twitter</a></li>
+                            <li><a href="https://plus.google.com/<?php echo osc_get_preference("gplus_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-google-plus fa-lg"></i> <?php echo _e('Follow on','flatter')?> Google+</a></li>
                             <!--li><a href="http://www.pinterest.com/<?php //echo osc_get_preference("pinterest_page", "flatter_theme"); ?>" target="_blank"><i class="fa fa-pinterest fa-lg"></i> Follow on Pinterest</a></li-->
                             <!--li><a href="<?php //echo osc_base_url (); ?>feed" target="_blank"><i class="fa fa-rss fa-lg"></i> RSS Feed</a></li-->
                         </ul>
@@ -78,7 +78,7 @@
             <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-6 copyright">
-                    &copy; <?php echo date('Y'); ?> <a href="#"><?php echo osc_page_title(); ?></a>. All Rights Reserved. 
+                    &copy; <?php echo date('Y'); ?> <a href="#"><?php echo osc_page_title(); ?></a>. <?php echo _e('All Rights Reserved.','flatter')?> 
                     <?php if( osc_get_preference('footer_link', 'flatter_theme') !== '0') { echo 'Powered by <a title="Osclass" target="_blank" rel="nofollow" href="http://osclass.org/">Osclass</a>'; } ?>
                 </div>				
             </div>

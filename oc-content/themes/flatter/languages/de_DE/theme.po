@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-12-21 20:09+0100\n"
+"PO-Revision-Date: 2014-12-21 20:30+0100\n"
 "Last-Translator: _CONEJO <conejo@conejo.me>\n"
 "Language-Team: Translations <translations@osclass.org>\n"
 "Language: de_DE\n"
@@ -25,6 +25,26 @@ msgstr "Du musst angemeldet sein, um einen Kommentar zu schreiben."
 #: comments.php:80
 msgid "Register"
 msgstr "Account erstellen"
+
+#: footer.php:29
+msgid "Follow Us"
+msgstr "Folge Uns"
+
+#: footer.php:17
+msgid "More Information"
+msgstr "Mehr Infomationen"
+
+#: footer.php:17
+msgid "Popular Listings"
+msgstr "Beliebte Mietobjekte"
+
+#: footer.php:17
+msgid "All Rights Reserved."
+msgstr "Alle Rechte vorbehalten."
+
+#: footer.php:32
+msgid "Follow on"
+msgstr "Folge uns auf"
 
 #: 404.php:10
 msgid "Let us help you, we have got a few tips for you to find it."
