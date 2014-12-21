@@ -31,7 +31,7 @@
             </div>
             <?php } ?>
             
-            <h5>Location</h5>
+            <h5><?php _e('Location', 'flatter') ; ?></h5>
             <div class="form-group">
             	<input type="text" class="form-control" id="sCity" placeholder="<?php _e('City', 'flatter') ; ?>" name="sCity" value="<?php echo osc_esc_html(osc_search_city()); ?>" />
             </div>
@@ -40,7 +40,7 @@
             </div>
             
 			<?php if( osc_price_enabled_at_items() ) { ?>
-            <h5>Price</h5>
+            <h5><?php _e('Price', 'flatter') ; ?></h5>
             <div class="form-group price-slide clearfix">
                 <input class="form-control pull-left" type="text" id="priceMin" name="sPriceMin" placeholder="<?php _e('Min', 'flatter') ; ?>." value="<?php echo osc_esc_html(osc_search_price_min()); ?>" size="6" maxlength="6" />
                 
