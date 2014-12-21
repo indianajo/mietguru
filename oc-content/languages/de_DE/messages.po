@@ -2,13 +2,17 @@
 # This file is distributed under the same license as the Flash Messages package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-08-12 13:30:17+0000\n"
+"PO-Revision-Date: 2014-12-21 19:57+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/0.1\n"
+"X-Generator: Poedit 1.7.1\n"
 "Project-Id-Version: Flash Messages\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
 
 #: oc-includes/osclass/controller/ajax.php:101
 #: oc-includes/osclass/controller/item.php:313
@@ -388,12 +392,13 @@ msgstr "Layout (theme) Verzeichnis ist nicht beschreibbar"
 msgid "The theme has been installed correctly"
 msgstr "Layout wurde korrekt installiert"
 
-#: oc-admin/appearance.php:57 oc-admin/languages.php:67 oc-admin/plugins.php:60
+#: oc-admin/appearance.php:57 oc-admin/languages.php:67
+#: oc-admin/plugins.php:60
 msgid "The zip file is not valid"
 msgstr "Zip-Datei ist nicht gültig"
 
-#: oc-admin/appearance.php:60 oc-admin/languages.php:70 oc-admin/plugins.php:63
-#: oc-admin/tools.php:55
+#: oc-admin/appearance.php:60 oc-admin/languages.php:70
+#: oc-admin/plugins.php:63 oc-admin/tools.php:55
 msgid "No file was uploaded"
 msgstr "Es wurde keine Datei hochgeladen"
 
@@ -1217,7 +1222,7 @@ msgstr "Vielen Dank für Ihre Spende"
 
 #: oc-includes/osclass/controller/item.php:507
 msgid "You need to be logged to comment"
-msgstr "Sie müssen eingeloggt sein, um Kommentare zu veröffentlichen"
+msgstr "Log dich ein um einen Kommentare zu veröffentlichen"
 
 #: oc-includes/osclass/helpers/hSecurity.php:85
 msgid "Invalid CSRF token."
