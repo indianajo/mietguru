@@ -48,7 +48,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-          	<li class="dropdown catmenu hidden-xs"><a href="<?php echo osc_search_url(); ?>" class="dropdown-toggle" data-toggle="dropdown">Categories <span class="caret"></span></a>
+          	<li class="dropdown catmenu hidden-xs"><a href="<?php echo osc_search_url(); ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo _e('Categories','flatter')?> <span class="caret"></span></a>
               <ul class="dropdown-menu multi-level" role="menu">
                 <?php if ( osc_count_categories() >= 0 ) { ?>
 				<?php while ( osc_has_categories() ) { ?>

@@ -62,7 +62,7 @@
                                         }else {echo $rg; }
                                     }else {echo  $ct; }
                             ?>
-                            <small><a href="#location" data-toggle="modal" data-target="#locationSelect">browse by location</a></small></h3>
+                            <small><a href="#location" data-toggle="modal" data-target="#locationSelect"><?php echo _e('browse by location','flatter')?></a></small></h3>
                             <!-- locationSelect -->
                         </div>
                     </div>
