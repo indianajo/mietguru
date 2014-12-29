@@ -47,12 +47,7 @@
           <h1><a class="navbar-brand" href="<?php echo osc_base_url(); ?>"><?php echo logo_header(); ?></a></h1>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-          	
-            <?php if( osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
-            <li class="publish"><a href="<?php echo osc_item_post_url() ; ?>"><?php _e("Publish your ad for free", 'flatter');?></a></li>
-            <?php } ?>
-          </ul>
+         
           
           <ul class="nav navbar-nav navbar-right">
             <?php if( osc_users_enabled() ) { ?>
