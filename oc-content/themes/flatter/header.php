@@ -48,23 +48,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-          	<li class="dropdown catmenu hidden-xs"><a href="<?php echo osc_search_url(); ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo _e('Categories','flatter')?> <span class="caret"></span></a>
-              <ul class="dropdown-menu multi-level" role="menu">
-                <?php if ( osc_count_categories() >= 0 ) { ?>
-				<?php while ( osc_has_categories() ) { ?>
-                	<li class="<?php echo osc_category_slug() ; ?> dropdown-submenu"><a class="category" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?> <span>(<?php echo osc_category_total_items() ; ?>)</span></a> 
-                    	<?php if ( osc_count_subcategories() > 0 ) { if (osc_count_subcategories() > $count_max) { $count_max = osc_count_subcategories();} ?> 
-                            <ul class="dropdown-menu">               
-                            <?php while ( osc_has_subcategories() ) { ?>
-                               <li><a class="cat_<?php echo osc_category_id(); ?>" href="<?php echo osc_search_category_url(); ?>"><?php echo osc_category_name(); ?> <span>(<?php echo osc_category_total_items() ; ?>)</span></a></li>
-                            <?php } ?>
-                            </ul>
-                     	<?php } ?>
-                    </li>
-                <?php } ?> 
-                <?php } ?>
-              </ul>
-            </li>
+          	
             <?php if( osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
             <li class="publish"><a href="<?php echo osc_item_post_url() ; ?>"><?php _e("Publish your ad for free", 'flatter');?></a></li>
             <?php } ?>
