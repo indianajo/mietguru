@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-12-30 17:27+0100\n"
+"PO-Revision-Date: 2014-12-30 17:35+0100\n"
 "Last-Translator: _CONEJO <conejo@conejo.me>\n"
 "Language-Team: Translations <translations@osclass.org>\n"
 "Language: de_DE\n"
@@ -614,7 +614,7 @@ msgid "Delete your question"
 msgstr "Frage löschen"
 
 #: comments.php:73
-msgid "You need to be logged in to ask a question"
+msgid "You need to be logged in to ask a question."
 msgstr "Du musst angemeldet sein, um eine Frage zu hinterlassen."
 
 #: item.php:169
