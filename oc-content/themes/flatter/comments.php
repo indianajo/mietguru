@@ -1,9 +1,10 @@
 <?php if( osc_comments_enabled() ) { ?>
+     <?php if ( osc_count_item_comments () >= 1 ) { ?>
     <div id="comments">
             <h2><i class="fa fa-comments"></i> 
-            <?php if ( osc_count_item_comments () <= 1 ) { ?>
+            <?php if ( osc_count_item_comments () == 1 ) { ?>
                 <?php echo osc_count_item_comments(); ?> <?php _e('Comment', 'flatter'); ?>
-            <?php } else { ?>
+            <?php } if ( osc_count_item_comments () > 1 ) { ?>
                 <?php echo osc_count_item_comments(); ?> <?php _e('Comments', 'flatter'); ?>
             <?php } ?>
             </h2>
@@ -31,11 +32,7 @@
                     <?php echo osc_comments_pagination(); ?>
                 </div>
             </div><!-- Comments List -->
-        <?php } else { ?>
-        <div class="no-comments">
-            <?php _e('No Comments', 'flatter'); ?>
-        </div>
-        <?php } ?>
+        <?php }  ?>
         <?php if( osc_reg_user_post_comments () && osc_is_web_user_logged_in() || !osc_reg_user_post_comments() ) { ?>
         <!--<ul id="comment_error_list"></ul>-->
         <?php CommentForm::js_validation(); ?>
@@ -76,9 +73,8 @@
                     </div>
                 </div><!-- Comment -->
         </div><!-- Comments Container -->
-        <?php } else { ?>
-        <div class="panel-footer"><?php echo _e('You need to be logged in to comment','flatter');?> <a href="<?php echo osc_user_login_url(); ?>"><?php _e("Login", 'flatter'); ?></a> / <a href="<?php echo osc_register_account_url(); ?>"><?php _e("Register", 'flatter'); ?></a></div>
         <?php } ?>    
     </div>
+<?php } ?>
 <?php } ?>
 <!-- Comments End -->
