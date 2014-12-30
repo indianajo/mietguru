@@ -42,8 +42,10 @@
                 <?php } else { ?>
                     <div class="pull-left pub-details">
                         <?php if( osc_item_user_id() != null ) { ?>
-                            <h5><a href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>"><?php echo osc_item_contact_name(); ?></a> </h5>
+                            <h5><?php echo voting_item_detail_user() ?></h5>
+                            
                             <small>Registered on <?php echo osc_format_date( osc_user_regdate() ); ?></small>
+                            
                         <?php } else { ?>
                             <h5><?php echo osc_item_contact_name(); ?></h5>
                         <?php } ?>
