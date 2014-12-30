@@ -11,18 +11,18 @@
     flatter_add_body_class('item');
 
     $location = array();
-    if( osc_item_city_area() !== '' ) {
+    /*if( osc_item_city_area() !== '' ) {
         $location[] = osc_item_city_area();
-    }
+    }*/
     if( osc_item_city() !== '' ) {
         $location[] = osc_item_city();
     }
-    if( osc_item_region() !== '' ) {
+    /*if( osc_item_region() !== '' ) {
         $location[] = osc_item_region();
     }
     if( osc_item_country() !== '' ) {
         $location[] = osc_item_country();
-    }
+    }*/
 
     osc_current_web_theme_path('header.php');
 ?>
