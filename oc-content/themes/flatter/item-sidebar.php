@@ -54,7 +54,7 @@
             
 			<?php if( osc_reg_user_can_contact() && !osc_is_web_user_logged_in() ) { ?>
             	<div class="nonregistered">
-                <p><?php _e("You must login or register a new account in order to contact the advertiser", 'flatter'); ?></p>
+                <p><?php _e("You must log in or register a new account in order to contact the advertiser", 'flatter'); ?></p>
                 <a class="btn btn-green" href="<?php echo osc_user_login_url(); ?>"><?php _e('Login', 'flatter'); ?></a>
                 <a class="btn btn-green" href="<?php echo osc_register_account_url(); ?>"><?php _e('Register for a free account', 'flatter'); ?></a>
             	</div>
