@@ -93,13 +93,13 @@ $path = osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__); ?>
         }
 
         #wrapper_voting_plugin .votes_star {
-            background: url("<?php echo osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__);?>img/ico_vot_vo.gif") repeat scroll 0 0 transparent;
+            background: url("<?php echo osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__);?>img/ico_vot_vo.png") repeat scroll 0 0 transparent;
             display: inline;
             float: left;
-            height: 20px;
+            height: 16px;
             margin: 0 4px 0 3px;
             position: relative;
-            width: 76px;
+            width: 81px;
         }
 
         #wrapper_voting_plugin .votes_vote {
@@ -109,7 +109,7 @@ $path = osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__); ?>
         }
 
         #wrapper_voting_plugin .votes_star a:hover {
-            background: url("<?php echo osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__);?>img/ico_vot_ov.gif") repeat-x scroll 0 0 transparent;
+            background: url("<?php echo osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__);?>img/ico_vot_ov.png") repeat-x scroll 0 0 transparent;
         }
 
         #voting_plugin_user {

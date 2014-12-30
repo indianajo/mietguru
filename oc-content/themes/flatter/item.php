@@ -31,7 +31,7 @@
     	<div class="row">
         	<div class="col-md-8 col-sm-7 col-xs-12 item-title">
         		<h2><?php echo osc_item_title(); ?></h2>
-                <span class="location"><i class="glyphicon glyphicon-map-marker"></i><a href="<?php echo osc_item_url(); ?>#gmap"><?php echo implode(', ', $location); ?></a></span>&nbsp;&nbsp;&nbsp;<span class="category hidden-xs"><i class="glyphicon glyphicon-folder-open"></i> <?php echo osc_item_category(); ?></span>&nbsp;&nbsp;&nbsp;<span class="posted"><i class="glyphicon glyphicon-calendar"></i> <?php echo osc_format_date( osc_item_pub_date() ); ?></span>
+                <span class="location"><i class="glyphicon glyphicon-map-marker"></i><a href="<?php echo osc_item_url(); ?>#gmap"><?php echo implode(', ', $location); ?></a></span>&nbsp;&nbsp;&nbsp;<span class="category hidden-xs"><i class="glyphicon glyphicon-folder-open"></i> <?php echo osc_item_category(); ?></span>&nbsp;&nbsp;&nbsp;<span class="posted"><i class="glyphicon glyphicon-calendar"></i> <?php echo osc_format_date( osc_item_pub_date() ); ?><?php echo voting_item_detail() ?></span>
             </div>
         </div>
     	<div class="row">
@@ -107,7 +107,7 @@
 									<?php } ?>
 								</table>
 							<?php } ?>
-							<?php osc_run_hook('item_detail', osc_item() ); ?></div><!-- Custom fields -->
+							<?php //osc_run_hook('item_detail', osc_item() ); ?></div><!-- Custom fields -->
 						</div>
                     </div> <!-- Description End -->
                     

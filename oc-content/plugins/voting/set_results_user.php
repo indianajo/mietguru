@@ -55,7 +55,7 @@
     }
 
     .votes_star {
-        background: url("<?php echo osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__);?>img/ico_vot_vo.gif") repeat scroll 0 0 transparent;
+        background: url("<?php echo osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__);?>img/ico_vot_vo.png") repeat scroll 0 0 transparent;
         display: inline;
         float: left;
         height: 20px;
@@ -71,7 +71,7 @@
     }
 
     .votes_star a:hover {
-        background: url("<?php echo osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__);?>img/ico_vot_ov.gif") repeat-x scroll 0 0 transparent;
+        background: url("<?php echo osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__);?>img/ico_vot_ov.png") repeat-x scroll 0 0 transparent;
     }
 
     #voting_plugin {

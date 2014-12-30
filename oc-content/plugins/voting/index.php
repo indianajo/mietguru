@@ -315,9 +315,9 @@ Plugin update URI: voting
     function voting_star($star, $avg_vote)
     {
         $path = osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__);
-        $star_ok = $path.'img/ico_vot_ok.gif';
-        $star_no = $path.'img/ico_vot_no.gif';
-        $star_md = $path.'img/ico_vot_md.gif';
+        $star_ok = $path.'img/ico_vot_ok.png';
+        $star_no = $path.'img/ico_vot_no.png';
+        $star_md = $path.'img/ico_vot_md.png';
 
         if( $avg_vote >= $star) {
             echo $star_ok;
