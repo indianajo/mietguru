@@ -17,7 +17,7 @@
             </div>
             <?php } ?>
             <div class="votes_results">
-                <span style="float:left; padding-right: 4px;"><?php _e('Result', 'voting');?>  </span>
+                
                 <?php
                     $avg_vote = $vote['vote'];
                     if($avg_vote==5) {
@@ -39,6 +39,6 @@
                 <img title="<?php echo $tooltip; ?>" src="<?php voting_star(3, $avg_vote); ?>">
                 <img title="<?php echo $tooltip; ?>" src="<?php voting_star(4, $avg_vote); ?>">
                 <img title="<?php echo $tooltip; ?>"  src="<?php voting_star(5, $avg_vote); ?>">
-                <span style="float:left; padding-right: 4px; padding-left: 4px;"><?php echo $vote['total'];?> <?php _e('votes', 'voting');?></span>
+                <span style="float:left; padding-right: 4px; padding-left: 4px;">(<?php echo $vote['total'];?>)</span>
             </div>
         </div>
