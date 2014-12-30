@@ -141,18 +141,8 @@
                         	<div class="pull-right edit">
                         	<a href="<?php echo osc_item_edit_url(); ?>" data-toggle="tooltip" data-original-title="<?php _e('Edit item', 'flatter'); ?>" rel="nofollow"><i class="fa fa-pencil"></i></a>
                             </div>
-                        <?php } else { ?>
-                    	<div class="btn-group pull-right markas">
-                        <a href="#" title="<?php _e("Mark as...", 'flatter'); ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-flag"></i></a>
-                            <ol class="dropdown-menu">
-                                <li><a id="item_spam" href="<?php echo osc_item_link_spam(); ?>" rel="nofollow"><?php _e('Mark as spam', 'flatter'); ?></a></li>
-                                <li><a id="item_bad_category" href="<?php echo osc_item_link_bad_category(); ?>" rel="nofollow"><?php _e('Mark as misclassified', 'flatter'); ?></a></li>
-                                <li><a id="item_repeated" href="<?php echo osc_item_link_repeated(); ?>" rel="nofollow"><?php _e('Mark as duplicated', 'flatter'); ?></a></li>
-                                <li><a id="item_expired" href="<?php echo osc_item_link_expired(); ?>" rel="nofollow"><?php _e('Mark as expired', 'flatter'); ?></a></li>
-                                <li><a id="item_offensive" href="<?php echo osc_item_link_offensive(); ?>" rel="nofollow"><?php _e('Mark as offensive', 'flatter'); ?></a></li>
-                             </ol>
-                        </div>
-                        <?php } ?>
+                        <?php }  ?>
+                    	
                     </div>
                 </div>
                 
