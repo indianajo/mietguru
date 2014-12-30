@@ -77,7 +77,7 @@
         <div class="footer-bottom">
             <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-6 copyright">
+                <div class="col-md-6 col-sm-12 col-xs-12 copyright">
                     &copy; <?php echo date('Y'); ?> <a href="#"><?php echo osc_page_title(); ?></a>. <?php echo _e('All Rights Reserved.','flatter')?> 
                     <?php if( osc_get_preference('footer_link', 'flatter_theme') !== '0') { echo 'Powered by <a title="Osclass" target="_blank" rel="nofollow" href="http://osclass.org/">Osclass</a>'; } ?>
                 </div>				
