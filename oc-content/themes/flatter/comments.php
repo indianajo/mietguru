@@ -1,12 +1,8 @@
 <?php if( osc_comments_enabled() ) { ?>
-     <?php if ( osc_count_item_comments () >= 1 ) { ?>
+     <?php //if ( osc_count_item_comments () >= 1 ) { ?>
     <div id="comments">
             <h2><i class="fa fa-comments"></i> 
-            <?php if ( osc_count_item_comments () == 1 ) { ?>
-                <?php echo osc_count_item_comments(); ?> <?php _e('Comment', 'flatter'); ?>
-            <?php } if ( osc_count_item_comments () > 1 ) { ?>
-                <?php echo osc_count_item_comments(); ?> <?php _e('Comments', 'flatter'); ?>
-            <?php } ?>
+			<?php _e('Questions and answers', 'flatter'); ?>
             </h2>
         <?php if( osc_count_item_comments() >= 1 ) { ?>
             <div class="comments_list">
@@ -23,7 +19,7 @@
                             <h5><a href="<?php echo osc_user_public_profile_url(osc_comment_user_id()); ?>"><?php echo osc_comment_author_name(); ?></a> <small><?php echo osc_format_date( osc_comment_pub_date() ); ?></small></h5>
                             <p><?php echo nl2br( osc_comment_body() ); ?></p>
                             <?php if ( osc_comment_user_id() && (osc_comment_user_id() == osc_logged_user_id()) ) { ?>
-                            <p><a rel="nofollow" class="btn-danger" href="<?php echo osc_delete_comment_url(); ?>" title="<?php _e('Delete your comment', 'flatter'); ?>"><i class="fa fa-times"></i> <?php _e('Delete', 'flatter'); ?></a></p>
+                            <p><a rel="nofollow" class="btn-danger" href="<?php echo osc_delete_comment_url(); ?>" title="<?php _e('Delete your question', 'flatter'); ?>"><i class="fa fa-times"></i> <?php _e('Delete', 'flatter'); ?></a></p>
                         <?php } ?>
                         </div>
                     </div><!-- Comment -->
@@ -64,7 +60,7 @@
                             <?php } ?>
                             <h5><?php echo osc_logged_user_name(); ?></h5>
                             <div class="form-group">
-                               <textarea class="form-control" placeholder="<?php _e('Leave your comment (spam and offensive messages will be removed)', 'flatter'); ?>" rows="5" name="body" id="body"></textarea>
+                               <textarea class="form-control" placeholder="<?php _e('Leave your question (spam and offensive messages will be removed)', 'flatter'); ?>" rows="5" name="body" id="body"></textarea>
                             </div>
                             <div class="actions">
                                 <button class="btn btn-success" type="submit"><?php _e('Send', 'flatter'); ?></button>
@@ -73,8 +69,10 @@
                     </div>
                 </div><!-- Comment -->
         </div><!-- Comments Container -->
-        <?php } ?>    
+        <?php } else { ?>
+        <div class="panel-footer"><?php _e('You need to be logged in to ask a question.','flatter');?> <a href="<?php echo osc_user_login_url(); ?>"><?php _e("Login", 'flatter'); ?></a> / <a href="<?php echo osc_register_account_url(); ?>"><?php _e("Register", 'flatter'); ?></a></div>
+        <?php } ?>       
     </div>
 <?php } ?>
-<?php } ?>
+<?php //} ?>
 <!-- Comments End -->
