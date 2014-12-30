@@ -30,7 +30,7 @@
                     <?php } ?>
                     <button class="btn btn-default"><i class="fa fa-search fa-lg"></i><?php //_e("Search", 'flatter');?></button>
                 </form>
-                <span><a href="<?php echo osc_search_url(); ?>" id="#advsrch" class="nav-toggle">Advance Search <i class="fa fa-caret-right"></i></a></span>             
+                            
             </div>
             </div>
         </div>
