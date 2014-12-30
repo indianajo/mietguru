@@ -15,7 +15,7 @@
 
 	function watchlist() {
 		echo '<span class="fa-stack fa-lg">';
-		echo '<i class="fa fa-circle fa-stack-2x"></i><a href="javascript://" class="watchlist" id="' . osc_item_id() . '" title="' . __('Add to watchlist', 'watchlist') . '" rel="nofollow"><i class="fa fa-heart fa-stack-1x fa-inverse"></i></a>';
+		echo '<i class="fa fa-circle fa-stack-2x"></i><a href="javascript://" class="watchlist" id="' . osc_item_id() . '" title="' . __('Add to watchlist', 'watchlist') . '" rel="nofollow"><i class="fa fa-star fa-stack-1x fa-inverse"></i></a>';
 		echo '</span>';
 	}					
     /*function watchlist() {
