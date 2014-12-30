@@ -170,6 +170,7 @@
         <?php //if (function_exists("location")) { ?>
         <div class="widget">
             <h3 id="gmap"><?php _e('Listing Location', 'flatter'); ?></h3>
+            <div class="item_address"><p><?php echo osc_item_address().', '.osc_item_city(); ?></p></div>
             <div class="googlemap wblock">
                 <?php osc_run_hook('location'); ?>
             </div>
