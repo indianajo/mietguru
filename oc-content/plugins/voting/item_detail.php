@@ -1,6 +1,6 @@
 <?php if ( ! defined('ABS_PATH')) exit('ABS_PATH is not loaded. Direct access is not allowed.');
 $path = osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__); ?>
-<!--div id="wrapper_voting_plugin"-->
+<div id="wrapper_voting_plugin">
     <script type="text/javascript">
     $(function(){
         $('.aPs').click(function(){
@@ -117,4 +117,4 @@ $path = osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__); ?>
         <?php include('view_votes.php');?>
     </div>
     <div style="clear:both;"></div>
-<!--/div-->
+</div>

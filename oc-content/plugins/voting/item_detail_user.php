@@ -35,8 +35,8 @@ $path = osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__); ?>
 
     <style>
         #wrapper_voting_plugin{
-            margin-top:10px;
-            padding: 5px;
+            //margin-top:10px;
+            //padding: 5px;
         }
 
         #wrapper_voting_plugin .votes_txt_vote {
