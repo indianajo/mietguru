@@ -17,7 +17,7 @@
                         <?php } else { ?>
                         	<span class="fa-stack fa-lg">
                               <i class="fa fa-circle fa-stack-2x"></i>
-                              <a title="<?php _e("Add to watchlist", 'watchlist'); ?>" rel="nofollow" href="<?php echo osc_user_login_url(); ?>"><i class="fa fa-heart fa-stack-1x fa-inverse"></i></a>
+                              <a title="<?php _e("Add to watchlist", 'watchlist'); ?>" rel="nofollow" href="<?php echo osc_user_login_url(); ?>"><i class="fa fa-star fa-stack-1x fa-inverse"></i></a>
                             </span>
                         <?php } ?>
                 	</div>
