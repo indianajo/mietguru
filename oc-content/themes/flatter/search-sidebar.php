@@ -11,7 +11,7 @@
 	<?php osc_alert_form(); ?>
     <?php } ?>
     <div class="widget">
-        <h3><?php _e('Your search', 'flatter'); ?></h3>
+        <h3><?php _e('Refine search', 'flatter'); ?></h3>
         <div class="wblock quicksearch">
         	<form action="<?php echo osc_base_url(true); ?>" method="get" class="nocsrf">
             <input type="hidden" name="page" value="search"/>
