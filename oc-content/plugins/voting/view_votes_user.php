@@ -11,7 +11,7 @@
 
         $path = osc_base_url().'/oc-content/plugins/'.  osc_plugin_folder(__FILE__); ?>
         <div class="votes_stars">
-            <div style="float:left; padding-right:5px;"><?php $aux = User::newInstance()->findByPrimaryKey($_userId); echo $aux['s_name']; ?></div>
+            <div style="float:left; padding-right:5px;"><a href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>"><?php $aux = User::newInstance()->findByPrimaryKey($_userId); echo $aux['s_name']; ?></a></div>
             <?php if( $vote['can_vote'] ) { ?>
             <div class="votes_vote">
                 <div class="votes_star">
@@ -48,6 +48,6 @@
                 <img title="<?php echo $tooltip; ?>" src="<?php voting_star(3, $avg_vote); ?>">
                 <img title="<?php echo $tooltip; ?>" src="<?php voting_star(4, $avg_vote); ?>">
                 <img title="<?php echo $tooltip; ?>"  src="<?php voting_star(5, $avg_vote); ?>">
-                <span style="float:left; padding-right: 4px; padding-left: 4px;"><?php echo $vote['total'];?> <?php _e('votes', 'voting');?></span>
+                <span style="float:left; padding-right: 4px; padding-left: 4px;">(<?php echo $vote['total'];?>)</span>
             </div>
         </div>
