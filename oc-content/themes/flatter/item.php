@@ -95,20 +95,20 @@
                         	<div id="des" class="">
                            		<?php echo osc_item_description(); ?>
                          	</div>
-                          <div id="custom_fields" class="col-md-4"><?php if( osc_count_item_meta() >= 1 ) { ?>
-<h3><?php _e('Additional Details', 'flatter'); ?></h3>
-<table>
-<?php while ( osc_has_item_meta() ) { ?>
-<tr>
-<?php if(osc_item_meta_value()!='') { ?>
-<td><strong><?php echo osc_item_meta_name(); ?>:</strong></td><td><?php echo osc_item_meta_value(); ?></td>
-<?php } ?>
-</tr>
-<?php } ?>
-</table>
-<?php } ?>
-<?php osc_run_hook('item_detail', osc_item() ); ?></div><!-- Custom fields -->
-                        </div>
+                       	<div id="custom_fields" class="col-md-4"><?php if( osc_count_item_meta() >= 1 ) { ?>
+							<h3><?php _e('Additional Details', 'flatter'); ?></h3>
+								<table>
+									<?php while ( osc_has_item_meta() ) { ?>
+										<tr>
+										<?php if(osc_item_meta_value()!='') { ?>
+											<td><strong><?php echo osc_item_meta_name(); ?>:</strong></td><td><?php echo osc_item_meta_value(); ?></td>
+										<?php } ?>
+										</tr>
+									<?php } ?>
+								</table>
+							<?php } ?>
+							<?php osc_run_hook('item_detail', osc_item() ); ?></div><!-- Custom fields -->
+						</div>
                     </div> <!-- Description End -->
                     
                 </div><!-- Item Content End -->
