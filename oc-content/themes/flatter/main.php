@@ -255,7 +255,7 @@
         	<div class="postadspace">
                 <div class="container">
                     <h2><?php echo osc_get_preference("fpromo_text", "flatter_theme"); ?></h2>
-                    <p>Over <strong><?php echo osc_total_active_items(); ?> <?php _e("Ads", 'flatter');?></strong> listed in <strong><?php echo osc_count_list_cities(); ?> <?php _e("Cities", 'flatter');?></strong>.</p>
+                    
                     <?php if( osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
                         <a class="btn btn-success btn-lg" href="<?php echo osc_item_post_url() ; ?>"><?php _e("Publish your ad for free", 'flatter');?></a>
                     <?php } ?>
