@@ -85,6 +85,19 @@
                     </ul>
                 </li>
             <?php } ?>
+            	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php _e('Help','flatter')?>&nbsp;&nbsp;<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">                    
+                    	<?php osc_reset_static_pages();
+                    		$i = 0;
+                    	while( osc_has_static_pages() && $i<3 ) { ?>
+                            <li><a href="<?php echo osc_static_page_url(); ?>"><?php echo osc_static_page_title(); ?></a></li>
+                            <?php $i++; ?>
+                        <?php } ?>
+                    </ul>
+                </li>
+            <?php if( osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
+           		<li class="publish"><a href="<?php echo osc_item_post_url() ; ?>"><?php _e("Publish your ad for free", 'flatter');?></a></li>
+            <?php } ?>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
