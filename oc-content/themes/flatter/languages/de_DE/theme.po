@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-12-30 17:35+0100\n"
+"PO-Revision-Date: 2015-01-01 11:41+0100\n"
 "Last-Translator: _CONEJO <conejo@conejo.me>\n"
 "Language-Team: Translations <translations@osclass.org>\n"
 "Language: de_DE\n"
@@ -53,6 +53,10 @@ msgstr "Kategorien"
 #: main.php:65
 msgid "browse by location"
 msgstr "nach Standort suchen"
+
+#: main.php:38
+msgid "Where do you want to rent?"
+msgstr "Wo möchtest du mieten?"
 
 #: main.php:25
 msgid "Select a region"

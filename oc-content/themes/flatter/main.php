@@ -14,20 +14,9 @@
         	<div class="bigsearch">
             	<form action="<?php echo osc_base_url(true); ?>" method="get" class="search nocsrf" <?php /* onsubmit="javascript:return doSearch();"*/ ?>>
                     <input type="hidden" name="page" value="search"/>
-                    <input type="text" name="sPattern" id="query" class="input-text" value="" placeholder="<?php echo osc_esc_html(__(osc_get_preference('keyword_placeholder', 'flatter_theme'), 'flatter')); ?>" />
-                    <?php  if ( osc_count_categories() ) { ?>
-                    <?php osc_categories_select('sCategory', null, __('Select a category', 'flatter')) ; ?>
-                    <?php  } ?>
+                    <input type="text" name="sPattern" id="query" class="input-text" value="" placeholder="<?php echo osc_esc_html(__(osc_get_preference('keyword_placeholder', 'flatter_theme'), 'flatter')); ?>" />                    
+                    <input type="text" class="input-text" id="sCity" placeholder="<?php echo _e('Where do you want to rent?', 'flatter'); ?>" name="sCity" value="" />
                     
-                   <?php $aRegions = Region::newInstance()->listAll(); ?>
-					<?php if(count($aRegions) > 0 ) { ?>
-                    <select name="sRegion" id="sRegion">
-                    	<option value=""><?php _e('Select a region', 'flatter'); ?></option>
-                        <?php foreach($aRegions as $region) { ?>
-                        <option value="<?php echo $region['s_name'] ; ?>"><?php echo $region['s_name'] ; ?></option>
-                        <?php } ?>
-                    </select>
-                    <?php } ?>
                     <button class="btn btn-default"><i class="fa fa-search fa-lg"></i><?php //_e("Search", 'flatter');?></button>
                 </form>
                             
@@ -37,91 +26,7 @@
     </div>
     <!-- Big Search -->
     
-    <div id="sections">
-    	<div class="section">
-        	<!--<script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script>-->
-			<?php
-                $ip = $_SERVER['REMOTE_ADDR'];
-                $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json")); ?>
-                
-            <?php 
-                $ct= $details->city;
-                $rg= $details->region;
-                $cy= $details->country; 
-            ?> 
-            <div class="latestbylocation">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                        <h3><?php 
-                                if($ct==null) {
-                                        if ($rg==null){
-                                            if($cy==null){
-                                                echo "<!--No country avilabe show --> No listing found";
-                                            } else { echo "<script language='JavaScript'>document.write(geoip_city());</script>"; }
-                                        }else {echo $rg; }
-                                    }else {echo  $ct; }
-                            ?>
-                            <small><a href="#location" data-toggle="modal" data-target="#locationSelect"><?php echo _e('browse by location','flatter')?></a></small></h3>
-                            <!-- locationSelect -->
-                        </div>
-                    </div>
-        
-                    <div class="row">
-                        <div class="col-md-12">
-                        <div id="owl-latest" class="owl-carousel">
-                            <?php
-                                $ct= $details->city;
-                                $rg= $details->region;
-                                $cy= $details->country; 
-                                if($cy==null) {
-                                if ($rg==null){
-                                if($ct !=null){
-                                osc_query_item('city_name='.$ct);
-                                }
-                                }else {  osc_query_item('region_name='.$rg); }
-                                }else { osc_query_item('country_name='.$cy); }
-                                if( osc_count_custom_items() == 0) { 
-                            ?>
-        
-                            <?php } else { ?>
-                            <?php while ( osc_has_custom_items() ) { ?>
-                            <div class="item wow fadeInUp animated">
-                                <div class="list">
-                                    <?php if( osc_images_enabled_at_items() ) { ?>
-                                    <div class="image">
-                                        <div>
-                                        <?php if(osc_count_item_resources()) { ?>
-                                        <a href="<?php echo osc_item_url(); ?>"><img src="<?php echo osc_resource_preview_url(); ?>" alt="<?php echo osc_item_title(); ?>" class="img-responsive" /></a>
-                                        <?php } else { ?>
-                                        <a href="<?php echo osc_item_url(); ?>"><img src="<?php echo osc_current_web_theme_url('images/no-image.jpg'); ?>" alt="<?php echo osc_item_title(); ?>" class="img-responsive"></a>
-                                        <?php } ?>
-                                        </div>
-                                    </div>
-                                    <?php } ?>
-                                    <div class="caption">
-                                        <h3><a href="<?php echo osc_item_url(); ?>"><?php echo osc_item_title(); ?></a></h3>
-                                        <p class="user"><?php _e('by', 'flatter') ?> <?php if( osc_item_user_id() != null ) { ?><a href="<?php echo osc_user_public_profile_url( osc_item_user_id() ); ?>" ><?php echo osc_item_contact_name(); ?></a><?php } else { ?><?php echo osc_item_contact_name(); ?><?php } ?></p>
-                                        <p class="description"><?php echo osc_highlight( strip_tags( osc_item_description() ), 110 ) ; ?></p>
-                                        <div class="row">
-                                            <div class="col-md-5 col-sm-5 col-xs-5 price">
-                                                <?php if( osc_price_enabled_at_items() ) { ?><span><?php echo osc_format_price(osc_item_price()); ?></span><?php } ?>
-                                            </div>
-                                            <div class="col-md-7 col-sm-7 col-xs-7 location">
-                                                <i class="glyphicon glyphicon-map-marker"></i><?php if(osc_item_region()) { ?> <?php echo osc_item_region(); ?><?php } else { ?> <?php echo osc_item_country(); ?><?php } ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php } ?>
-                            <?php } ?>
-                        </div>
-                        </div>        
-                    </div><!-- row -->
-                </div>
-            </div>
-            <!-- Listing by Location -->
+    
         </div><!-- Section 1 -->
         <div class="section">
 			<?php osc_get_premiums(osc_get_preference('premium_count', 'flatter_theme')); if( osc_count_premiums() >= 1) { ?>

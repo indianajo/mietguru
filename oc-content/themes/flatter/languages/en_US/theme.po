@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-12-30 17:28+0100\n"
+"PO-Revision-Date: 2015-01-01 11:41+0100\n"
 "Last-Translator: _CONEJO <conejo@conejo.me>\n"
 "Language-Team: Translations <translations@osclass.org>\n"
 "Language: en_US\n"
@@ -583,6 +583,10 @@ msgstr ""
 
 #: loop-single-premium.php:29 loop-single.php:29
 msgid "Activate"
+msgstr ""
+
+#: main.php:38
+msgid "Where do you want to rent?"
 msgstr ""
 
 #: main.php:38
