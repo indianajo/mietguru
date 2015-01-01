@@ -72,19 +72,7 @@
                 <?php }; ?>
             <?php } ?>
             <?php } ?>
-            <?php if ( osc_count_web_enabled_locales() > 1) { ?>
-				<?php osc_goto_first_locale(); ?>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-globe"></i>&nbsp;&nbsp;<?php $lcode = osc_get_current_user_locale(); echo $lcode['s_short_name']; ?>&nbsp;&nbsp;<span class="caret"></span></a>
-                <?php $i = 0;  ?>
-                    <ul class="dropdown-menu" role="menu">
-                    <?php while ( osc_has_web_enabled_locales() ) { 
-                    if (osc_locale_code()!=osc_current_user_locale()) { ?>
-                    <li><a id="<?php echo osc_locale_code(); ?>" rel="nofollow" href="<?php echo osc_change_language_url ( osc_locale_code() ); ?>"><?php echo osc_locale_name(); ?></a></li><?php if( $i == 0 ) { echo ""; } ?>
-                        <?php $i++; ?>
-                    <?php } } ?>
-                    </ul>
-                </li>
-            <?php } ?>
+            
             	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php _e('Help','flatter')?>&nbsp;&nbsp;<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">                    
                     	<?php osc_reset_static_pages();
@@ -95,6 +83,18 @@
                         <?php } ?>
                     </ul>
                 </li>
+            <?php if ( osc_count_web_enabled_locales() > 1) { ?>
+				<?php osc_goto_first_locale(); ?>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-globe"></i></a>
+                <?php $i = 0;  ?>
+                    <ul class="dropdown-menu" role="menu">
+                    <?php while ( osc_has_web_enabled_locales() ) { 
+                    <li><a id="<?php echo osc_locale_code(); ?>" rel="nofollow" href="<?php echo osc_change_language_url ( osc_locale_code() ); ?>"><?php echo osc_locale_name(); ?></a></li><?php if( $i == 0 ) { echo ""; } ?>
+                        <?php $i++; ?>
+                    <?php } ?>
+                    </ul>
+                </li>
+            <?php } ?>
             <?php if( osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
            		<li class="publish"><a href="<?php echo osc_item_post_url() ; ?>"><?php _e("Publish your ad for free", 'flatter');?></a></li>
             <?php } ?>
