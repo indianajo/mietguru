@@ -268,7 +268,7 @@ h1 > small, h2 > small { font-size:14px; font-weight:300;}
 .carousel-caption p { margin:25px 0; }
 
 /** MAIN SEARCH **/
-.bigsearch { min-height:100px; padding:26px 28px 10px; position:relative; z-index:999; }
+.bigsearch { min-height:100px; padding:26px 28px 10px; position:relative; z-index:99; }
 .bigsearch span {  }
 .bigsearch span a { color:#fff; margin-top:2px; display:block; cursor:pointer; font-size:11px; }
 

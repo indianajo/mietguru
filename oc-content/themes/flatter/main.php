@@ -1,3 +1,8 @@
+
+<?php 
+osc_enqueue_style('jquery-ui', osc_assets_url('css/jquery-ui/jquery-ui.css'));
+osc_enqueue_script('jquery-ui');
+?>
 <?php osc_current_web_theme_path('header.php'); ?>
     <?php if (function_exists("osc_slider")) { ?>
     	<?php osc_slider(); ?>  
@@ -15,7 +20,7 @@
             	<form action="<?php echo osc_base_url(true); ?>" method="get" class="search nocsrf" <?php /* onsubmit="javascript:return doSearch();"*/ ?>>
                     <input type="hidden" name="page" value="search"/>
                     <input type="text" name="sPattern" id="query" class="input-text" value="" placeholder="<?php echo osc_esc_html(__(osc_get_preference('keyword_placeholder', 'flatter_theme'), 'flatter')); ?>" />                    
-                    <input type="text" class="input-text" id="sCity" placeholder="<?php echo _e('Where do you want to rent?', 'flatter'); ?>" name="sCity" value="" />
+                    <input type="text" class="input-text autocomplete-search" id="sCity" placeholder="<?php echo _e('Where do you want to rent?', 'flatter'); ?>" name="sCity" value="" />
                     
                     <button class="btn btn-default"><i class="fa fa-search fa-lg"></i><?php //_e("Search", 'flatter');?></button>
                 </form>
@@ -168,6 +173,18 @@
             </div>
         </div><!-- Section 5 -->
     </div>
+<script type="text/javascript" name="locationAutocomplete">
+jQuery(document).ready(function(){		
+		$( "#sCity" ).autocomplete({
+			source: "<?php echo osc_base_url(true); ?>?page=ajax&action=location",
+			minLength: 2,
+			select: function( event, ui ) {
+				$("#sCity").attr("value", ui.item.region);
+				
+			}
+		});
+	});
+</script>
 
 <?php osc_current_web_theme_path('locationfind.php'); ?>
 <?php osc_current_web_theme_path('footer.php') ; ?>
