@@ -88,7 +88,7 @@
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-globe"></i></a>
                 <?php $i = 0;  ?>
                     <ul class="dropdown-menu" role="menu">
-                    <?php while ( osc_has_web_enabled_locales() ) { 
+                    <?php while ( osc_has_web_enabled_locales() ) { ?>
                     <li><a id="<?php echo osc_locale_code(); ?>" rel="nofollow" href="<?php echo osc_change_language_url ( osc_locale_code() ); ?>"><?php echo osc_locale_name(); ?></a></li><?php if( $i == 0 ) { echo ""; } ?>
                         <?php $i++; ?>
                     <?php } ?>
