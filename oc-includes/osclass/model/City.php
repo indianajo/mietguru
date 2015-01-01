@@ -80,7 +80,7 @@
             if( $regionId != null ) {
                 $this->dao->where('a.fk_i_region_id', $regionId);
             }
-
+			$this->dao->limit(10);
             $result = $this->dao->get();
 
             if( $result == false ) {
