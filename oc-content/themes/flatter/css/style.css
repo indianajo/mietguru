@@ -967,7 +967,6 @@ b, strong { font-weight:400;}
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
 color: #fff;
 cursor: default;
-background-color: #609f8f;
 border: 1px solid #ddd;
 border-bottom-color: transparent;
 }
